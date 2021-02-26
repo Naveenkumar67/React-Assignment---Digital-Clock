@@ -5,12 +5,12 @@ class App extends Component {
    constructor(props){
        super(props)
        this.state={
-        time:Date.now().toLocaleTimeString()
+        time:new Date().toLocaleTimeString()
        }
        this.updateDate=this.updateDate.bind(this);
    }
    updateDate(){
-     let date=Date.now();
+     let date=new Date();
      let hrs=date.getHours();
      let min=date.getMinutes();
      let sec=date.getSeconds();
