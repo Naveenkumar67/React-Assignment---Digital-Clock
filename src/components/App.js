@@ -24,11 +24,11 @@ class App extends Component {
      }
      if(sec>59){
          sec=`0`;
-         min=`{(Number)min+1`}
+         min=`{(Number)min+1}`
      }
      if(min>59){
          min=`0`;
-         hrs=`{(Number)hrs+1`}
+         hrs=`{(Number)hrs+1}`
      }
      let ans=`${hrs}:${min}:${sec}${amPm}`;
      this.setState({time:ans});
