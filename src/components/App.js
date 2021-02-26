@@ -38,11 +38,11 @@ class App extends Component {
     render() {
 
         return(
-            <div id="root">
+            //<div id="root">
               <div className="Clock">
                 <h3 id="time">{this.state.time}</h3>  
                 </div> 
-                </div>   
+              //  </div>   
           
         )
     }
