@@ -23,7 +23,7 @@ class App extends Component {
          sec=`0${sec}`;
      }
      
-     let ans=`${hrs}:${min}:${sec}${amPm}`;
+     let ans=`${hrs}:${min}:${sec} ${amPm}`;
      this.setState({time:ans});
 
    }
