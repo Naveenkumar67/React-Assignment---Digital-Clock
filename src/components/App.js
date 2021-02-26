@@ -8,9 +8,16 @@ class App extends Component {
         time:Date.now()
        }
    }
+   
    componentDidMount(){
-       this.state.time;
+       this.update=setInterval(()=>{
+           this.setState({time:Date.now()})
+       },1000)
    }
+   componentWillUnmount(){
+       clearInterval(this.update);
+   }
+   
     render() {
 
         return(
