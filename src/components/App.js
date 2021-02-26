@@ -29,7 +29,7 @@ class App extends Component {
    }
 
    componentDidMount(){
-       this.update=setInterval(this.updateDate,1000)
+       this.update=setInterval(()=>{this.updateDate()},1000)
    }
    componentWillUnmount(){
        clearInterval(this.update);
