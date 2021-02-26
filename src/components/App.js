@@ -10,21 +10,21 @@ class App extends Component {
        this.updateDate=this.updateDate.bind(this);
    }
    updateDate(){
-     let date=new Date();
-     let hrs=date.getHours();
-     let min=date.getMinutes();
-     let sec=date.getSeconds();
+    //  let date=new Date();
+    //  let hrs=date.getHours();
+    //  let min=date.getMinutes();
+    //  let sec=date.getSeconds();
 
-     let amPm=hrs<12?'AM':'PM';
-     if(min<10){
-         min=`0${min}`;
-     }
-     if(sec<10){
-         sec=`0${sec}`;
-     }
+    //  let amPm=hrs<12?'AM':'PM';
+    //  if(min<10){
+    //      min=`0${min}`;
+    //  }
+    //  if(sec<10){
+    //      sec=`0${sec}`;
+    //  }
      
-     let ans=`${hrs}:${min}:${sec} ${amPm}`;
-     this.setState({time:ans});
+    //  let ans=`${hrs}:${min}:${sec} ${amPm}`;
+     this.setState({time:new Date().toLocaleTimeString});
 
    }
 
